@@ -84,10 +84,10 @@ mongoose.connect(dbURI,{ useNewUrlParser : true, useUnifiedTopology: true})
    .then(()=>{
       console.log("connected to the db");
    })
-   // .then((result)=>{
-   //    console.log("documents added");
-   //    create();
-   // })
+   .then((result)=>{
+      console.log("documents added");
+      create();
+   })
    .then((result)=>{
       find();
    })
